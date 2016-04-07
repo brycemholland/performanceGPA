@@ -36,3 +36,14 @@ input[type=submit], .button{
     top: -2px;
   }
 }
+.button.white{
+  background-color: $nutral-color1;
+  box-shadow: 0 2px 2px $primary-color-dark;
+  color: $primary-color;
+  &:hover{
+    box-shadow: 0 4px 4px $primary-color-dark;
+  }
+  &:focus{
+    box-shadow: 0 4px 4px $primary-color-dark;
+  }
+}

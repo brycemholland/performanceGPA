@@ -20,12 +20,10 @@ $nutral-color4: #424242;
 
 /* typography ================================================= */
 
-$display1: 100 34px 'Roboto', sans-serif;
-$headline: 300 24px 'Roboto', sans-serif;
+$headline: 300 32px 'Roboto', sans-serif;
 $title: 500 20px 'Roboto', sans-serif;
-$subhead: 400 16px 'Roboto', sans-serif;
-$body2: 500 14px 'Roboto', sans-serif;
-$body1: 400 14px 'Roboto', sans-serif;
+$subhead: 500 16px 'Roboto', sans-serif;
+$body: 400 14px 'Roboto', sans-serif;
 $caption: 400 12px 'Roboto', sans-serif;
 $button: 500 14px 'Roboto', sans-serif;
 
@@ -87,14 +85,16 @@ html, body{
   width: 100%;
 }
 
+.main-container{
+  box-sizing: border-box;
+  display: block;
+  max-width: 944px;
+  min-height: 100vh;
+  margin: 8px auto;
+  position: relative;
+}
+
 .clear{
   clear: both;
   width: 100%;
-}
-
-.presentation-container{
-  height: 64px;
-  margin: 0 auto;
-  padding: 24px;
-  width: 300px;
 }

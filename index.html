@@ -6,67 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="images/gpaFavicon.jpg">
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
-  <!--
-  <link rel="stylesheet" type="text/css" href="css/badge.css">
-  <link rel="stylesheet" type="text/css" href="css/bio-description.css">
-  <link rel="stylesheet" type="text/css" href="css/bio-interest.css">
   <link rel="stylesheet" type="text/css" href="css/board.css">
-  <link rel="stylesheet" type="text/css" href="css/board-header.css">
   <link rel="stylesheet" type="text/css" href="css/button.css">
-  <link rel="stylesheet" type="text/css" href="css/card-post-image.css">
-  <link rel="stylesheet" type="text/css" href="css/card-post-text.css">
-  <link rel="stylesheet" type="text/css" href="css/chip-pic-name.css">
-  <link rel="stylesheet" type="text/css" href="css/chip-pic-text.css">
-  <link rel="stylesheet" type="text/css" href="css/chip-text.css">
-  <link rel="stylesheet" type="text/css" href="css/circle-photo.css">
-  <link rel="stylesheet" type="text/css" href="css/comment.css">
+  <link rel="stylesheet" type="text/css" href="css/column.css">
   <link rel="stylesheet" type="text/css" href="css/footer.css">
-  <link rel="stylesheet" type="text/css" href="css/form.css">
-  <link rel="stylesheet" type="text/css" href="css/header.css">
-  <link rel="stylesheet" type="text/css" href="css/home.css">
-  <link rel="stylesheet" type="text/css" href="css/input-comment.css">
-  <link rel="stylesheet" type="text/css" href="css/input-dropdown.css">
-  <link rel="stylesheet" type="text/css" href="css/input-radio.css">
-  <link rel="stylesheet" type="text/css" href="css/input-text.css">
-  <link rel="stylesheet" type="text/css" href="css/input-text-field.css">
-  <link rel="stylesheet" type="text/css" href="css/main-container.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/home.css"> -->
   <link rel="stylesheet" type="text/css" href="css/menu.css">
   <link rel="stylesheet" type="text/css" href="css/navbar.css">
-  <link rel="stylesheet" type="text/css" href="css/pagination.css">
-  <link rel="stylesheet" type="text/css" href="css/post-sort.css">
-  <link rel="stylesheet" type="text/css" href="css/profile-info.css">
+  <link rel="stylesheet" type="text/css" href="css/overlay.css">
   <link rel="stylesheet" type="text/css" href="css/ripple.css">
-  <link rel="stylesheet" type="text/css" href="css/slider.css">
-  <link rel="stylesheet" type="text/css" href="css/square-photo.css">
-  <link rel="stylesheet" type="text/css" href="css/tabs.css">
-  -->
-  <link rel="stylesheet" type="text/css" href="css/style.min.css">
-  <!--
-  <script src="javascripts/card-post.js"></script>
-  <script src="javascripts/chip-pic-text.js"></script>
-  <script src="javascripts/form-validation.js"></script>
-  <script src="javascripts/input-comment.js"></script>
-  <script src="javascripts/input-dropdown.js"></script>
-  <script src="javascripts/input-radio.js"></script>
-  <script src="javascripts/input-text.js"></script>
-  <script src="javascripts/input-text-field.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/typography.css">
   <script src="javascripts/navbar.js"></script>
-  <script src="javascripts/pagination.js"></script>
   <script src="javascripts/ripple.js"></script>
-  <script src="javascripts/slider.js"></script>
-  <script src="javascripts/tabs.js"></script>
-  -->
+  <script src="javascripts/footer.js"></script>
 </head>
 <body>
-
-
-<!-- header =============================================== -->
-
-<div class="header">
-  <a href="#">
-    <img src="images/GPAlogo.png" class="logo">
-  </a>
-</div>
 
 
 <!-- navbar =============================================== -->
@@ -82,6 +36,9 @@
     </div>
   </div>
   <div class="page-name">Home</div>
+  <a href="#">
+    <img src="images/GPAlogo.png" class="logo">
+  </a>
 </div>
 
 
@@ -92,17 +49,20 @@
   <a href="#" class="menu-item ripple-button-dark">
     <div class="menu-text">Home</div>
   </a>
-  <a href="story.html" class="menu-item ripple-button-dark">
-    <div class="menu-text">Our Story</div>
+  <a href="products.html" class="menu-item ripple-button-dark">
+    <div class="menu-text">Products &amp; Services</div>
   </a>
-  <a href="focus.html" class="menu-item ripple-button-dark">
-    <div class="menu-text">Our Focus</div>
+  <a href="workshops.html" class="menu-item ripple-button-dark">
+    <div class="menu-text">Workshops</div>
   </a>
-  <a href="solutions.html" class="menu-item ripple-button-dark">
-    <div class="menu-text">Our Solutions</div>
+  <a href="s2p.html" class="menu-item ripple-button-dark">
+    <div class="menu-text">serve2perform®</div>
   </a>
-  <a href="contact.html" class="menu-item ripple-button-dark">
-    <div class="menu-text">Contact Us</div>
+  <a href="methodology.html" class="menu-item ripple-button-dark">
+    <div class="menu-text">The Methodology</div>
+  </a>
+  <a href="mindset.html" class="menu-item ripple-button-dark">
+    <div class="menu-text">The Mindset</div>
   </a>
 </div>
 
@@ -112,30 +72,80 @@
 <div class="main-container">
 
 
-  <!-- Quote Slider =============================================== -->
+  <!-- Overlay =============================================== -->
 
   <div class="board">
-    <div class="slider-container">
-      <div class="slider">
-        <div class="slide">
-          <img src="images/WebsiteQuotes1.png"/>
-          <div class="slide-text-container quote-text">
-            “I feel we have found a true partner in leadership development with Gransdslam Performance (GPA).  The opportunity for our partnership was immediately apparent given GPA has a solid leadership philosophy coupled with a passion for helping others.”<br><br>
-            - Monty Morton, Director of Training Development
+    <div class="overlay-container">
+      <img src="images/building.jpg"/>
+      <div class="overlay color"></div>
+      <div class="overlay text">
+        <div class="column-container">
+          <div class="column col75">
+            Get access to everything you need<br>
+            to become a Grandslam Performer!<br>
+            <ul>
+              <li>Sign up for exectutive coaching sessions</li>
+              <li>A seat to any of our trainings or workshops</li>
+              <li>Recieve one copy of the book that started it all</li>
+              <li>One membership to serve2perform.com®</li>
+            </ul>
           </div>
-        </div>
-        <div class="slide">
-          <img src="images/WebsiteQuotes2.png"/>
-          <div class="slide-text-container quote-text">
-            "Adam (GPA) has been a great partner for us at Walmart in helping us design and implement innovative diversity and inclusion, external relationship management, and talent acquisition strategies that have delivered measurable results for us."<br><br>
-            - Steve Whaley, Senior VP and Controller of Walmart Stores Inc.
+          <div class="column col25">
+            <div class="big-number right">$9.99</div>
+            <div class="right">per month</div>
+            <div class="button white">SIGN UP</div>
+            <div class="clear"></div>
           </div>
         </div>
       </div>
-      <div class="slide-indicator-container">
-        <div class="slide-indicator" data-index="0"></div>
-        <div class="slide-indicator" data-index="1"></div>
+    </div>
+  </div>
+
+
+  <!-- Video =============================================== -->
+
+  <!--
+  <div class="board">
+    video goes here
+  </div>
+  -->
+
+
+<!-- Grandslam Performance =============================================== -->
+
+  <div class="board">
+    <div class="board-header">How we achieve grandslam performance</div>
+    <div class="title">Our products are design to be compliments of each other to fully empower every employee to achieve grandslam performance.</div>
+    <div class="column-container">
+      <div class="column col25">
+        <img src="" class="icon">
+        <div class="subhead">Executive Coaching</div>
+        <div class="body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        </div>
       </div>
+      <div class="column col25">
+        <img src="" class="icon">
+        <div class="subhead">Training</div>
+        <div class="body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        </div>
+      </div>
+      <div class="column col25">
+        <img src="" class="icon">
+        <div class="subhead">Workshops</div>
+        <div class="body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        </div>
+      </div>
+      <div class="column col25">
+        <img src="" class="icon">
+        <div class="subhead">serve2perform</div>
+        <div class="body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        </div>
+      </div>
+      <div class="clear"></div>
     </div>
   </div>
 

@@ -2,11 +2,35 @@
 
 /* general ================================================== */
 
+.headline{
+  font: $headline;
+}
+
+.title{
+  color: $nutral-color3;
+  font: $title;
+  padding: 16px;
+}
+
+.subhead{
+  color: $nutral-color4;
+  font: $subhead;
+  padding: 16px 0;
+}
+
+.body{
+  font: $body;
+}
+
+.caption{
+  font: $caption;
+}
+
 .board-header{
   border-bottom: 1px $nutral-color2 solid;
   color: $primary-color;
   font: $headline;
-  line-height: 23px;
+  line-height: 32px;
   padding: 16px;
 }
 
@@ -20,24 +44,24 @@
 
 /* desktop ================================================== */
 
-@media (min-width: $desktop-min) {
+@media screen and (min-width: $desktop-min) {
 
-  
+
 
 }
-
 
 /* tablet ================================================== */
 
-@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+@media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+
 
   
-
 }
+
 
 /* phone ================================================== */
 
-@media (max-width: $phone-max) {
+@media screen and (max-width: $phone-max) {
 
   
 

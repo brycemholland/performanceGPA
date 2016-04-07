@@ -12,11 +12,6 @@
   img{
     max-height: 140px;
   }
-  .title{
-    color: $primary-color;
-    font: $title;
-    padding-bottom: 16px;
-  }
   .big-number{
     color: $primary-color;
     font: $title;
@@ -24,7 +19,7 @@
   }
   .info{
     color: $nutral-color3;
-    font: $body1;
+    font: $body;
   }
 }
 
@@ -47,7 +42,7 @@
 }
 .info-center{
   color: $nutral-color3;
-  font: $body1;
+  font: $body;
   padding: 16px;
   text-align: center;
 }
@@ -77,14 +72,14 @@
   color: $nutral-color3;
   display: block;
   float: left;
-  font: $body1;
+  font: $body;
   max-width: 50%;
   padding: 16px;
   position: relative;
   text-align: justify;
   ul{
     color: $primary-color;
-    font: $display1;
+    //font: $display1;
     padding: 0 32px;
     margin: 0;
     li{

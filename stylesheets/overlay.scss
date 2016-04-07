@@ -1,0 +1,74 @@
+@import "master";
+
+/* general ================================================== */
+
+.overlay-container{
+  height: 300px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  img{
+    position: absolute;
+    right: 0;
+    transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    -webkit-transform: translate(0, -25%);
+    width: 100%;
+  }
+  .overlay{
+    display: block;
+    height: 250px;
+    position: absolute;
+    top: 25px;
+    width: 100%;
+  }
+  .color{
+    background-color: $primary-color;
+    opacity: 0.6;
+  }
+  .text{
+    color: $nutral-color1;
+    font: $headline;
+    font-weight: bold;
+    ul{
+      font: $body;
+      padding-left: 16px;
+      li{
+        padding-bottom: 8px;
+      }
+    }
+    .right{
+      text-align: right;
+    }
+    .big-number{
+      font-size: 70px;
+    }
+  }
+}
+
+/* desktop ================================================== */
+
+@media screen and (min-width: $desktop-min) {
+
+
+
+}
+
+/* tablet ================================================== */
+
+@media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+
+  
+}
+
+
+/* phone ================================================== */
+
+@media screen and (max-width: $phone-max) {
+
+  
+
+}
