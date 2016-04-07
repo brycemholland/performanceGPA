@@ -1,0 +1,172 @@
+@import "master";
+
+/* general ================================================== */
+
+.header{
+  background-color: $primary-color;
+  border-bottom: 1px $primary-color-dark solid;
+  display: block;
+  height: 200px;
+  position: relative;
+  top: 0;
+  width: 100%;
+  @include transition(all, $fast, ease-in-out);
+  width: 100%;
+  z-index: 50;
+  .logo{
+    display: block;
+    height: 147px;
+    margin: 0 auto;
+    padding: 16px;
+    position: relative;
+    width: 201px;
+  }
+  .welcome{
+    color: $nutral-color1;
+    position: absolute;
+    right: 24px;
+    text-align: right;
+    top: 24px;
+    .user-name{
+      font: $title;
+    }
+    a{
+      color: $nutral-color1;
+      font: $subhead;
+      text-decoration: none;
+      &:hover{
+        color: $nutral-color2;
+      }
+    }
+    .logout-container{
+      width: 112px;
+      div{
+        float: right;
+        line-height: 24px;
+        padding-right: 8px;
+        width: 64px;
+      }
+      .logout-icon{
+        background: url("/assets/logout-icon.png") center no-repeat;
+        float: right;
+        height: 24px;
+        width: 16px;
+      }
+    }
+  }
+}
+
+
+/* desktop ================================================== */
+
+@media (min-width: $desktop-min) {
+
+  .header{
+    background-color: $primary-color;
+    border-bottom: 1px $primary-color-dark solid;
+    display: block;
+    height: 200px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    .logo{
+      display: block;
+      height: 147px;
+      margin: 0 auto;
+      padding: 16px;
+      position: relative;
+      width: 201px;
+    }
+    .welcome{
+      color: $nutral-color1;
+      position: absolute;
+      right: 24px;
+      text-align: right;
+      top: 24px;
+      .user-name{
+        font: $title;
+      }
+      .logout-container{
+        color: $nutral-color1;
+        font: $subhead;
+        width: 112px;
+        &:hover{
+          color: $nutral-color2;
+        }
+        div{
+          float: right;
+          line-height: 24px;
+          padding-right: 8px;
+          width: 64px;
+        }
+        .logout-icon{
+          background: url("/assets/logout-icon.png") center no-repeat;
+          float: right;
+          height: 24px;
+          width: 16px;
+        }
+      }
+    }
+  }
+
+}
+
+/* phone and tablet ================================================== */
+
+@media screen and (max-width: $tablet-max) {
+
+  .header{
+    display: none;
+  }
+
+  .index{
+    .header{
+      background-color: $primary-color;
+      border-bottom: 1px $primary-color-dark solid;
+      display: block;
+      height: 200px;
+      position: relative;
+      top: 0;
+      width: 100%;
+      .logo{
+        display: block;
+        height: 147px;
+        margin: 0 auto;
+        padding: 16px;
+        position: relative;
+        width: 201px;
+      }
+      .welcome{
+        color: $nutral-color1;
+        position: absolute;
+        right: 24px;
+        text-align: right;
+        top: 24px;
+        .user-name{
+          font: $title;
+        }
+        .logout-container{
+          color: $nutral-color1;
+          font: $subhead;
+          width: 112px;
+          &:hover{
+            color: $nutral-color2;
+          }
+          div{
+            float: right;
+            line-height: 24px;
+            padding-right: 8px;
+            width: 64px;
+          }
+          .logout-icon{
+            background: url("/assets/logout-icon.png") center no-repeat;
+            float: right;
+            height: 24px;
+            width: 16px;
+          }
+        }
+      }
+    }
+  }
+
+}

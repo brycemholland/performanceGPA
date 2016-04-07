@@ -1,0 +1,72 @@
+@import "master";
+
+
+/* general ================================================== */
+
+.input-text-container{
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  height: 64px;
+  padding: 0 16px;
+  position: relative;
+  .label{
+    color: $nutral-color3;
+    font: $caption;
+    padding: 8px 0;
+    position: absolute;
+    opacity: 0;
+  }
+  .input-text{
+    border: none;
+    border-bottom: 1px $nutral-color2 solid;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: $nutral-color3;
+    font: $title;
+    height: 40px;
+    margin: 16px 0 8px;
+    @include transition(all, $medium, ease-in-out);
+    width: 100%;
+    &:focus{
+      border-bottom: 2px $primary-color solid;
+      color: $nutral-color4;
+      outline: none;
+    }
+  }
+  .validation-error{
+    border-bottom: 2px $secondary-color solid;
+  }
+}
+
+
+/* desktop ================================================== */
+
+@media (min-width: $desktop-min) {
+
+  .input-text-container{
+    width: 50%;
+  }
+
+}
+
+
+/* tablet ================================================== */
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+  .input-text-container{
+    width: 50%;
+  }
+
+}
+
+/* phone ================================================== */
+
+@media (max-width: $phone-max) {
+
+  .input-text-container{
+    width: 100%;
+  }
+
+}

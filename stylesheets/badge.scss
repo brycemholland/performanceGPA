@@ -1,0 +1,165 @@
+@import "master";
+
+
+/* general ================================================== */
+
+.badge-stats{
+  cursor: pointer;
+  .badge-stat-container{
+    box-sizing: border-box;
+    color: $primary-color;
+    float: left;
+    padding: 16px;
+    width: 28%;
+    .badge-stat-number{
+      display: block;
+      float: left;
+      font: $display1;
+      font-size: 48px;
+      font-weight: bold;
+      line-height: 32px;
+      position: relative;
+    }
+    .badge-stat-text{
+      display: block;
+      float: left;
+      font: $subhead;
+      line-height: 16px;
+      padding-left: 8px;
+      position: relative;
+    }
+  }
+  .badge-help-text{
+    box-sizing: border-box;
+    color: $nutral-color3;
+    cursor: pointer;
+    float: right;
+    font: $body1;
+    padding: 16px;
+    text-align: right;
+    width: 16%;
+  }
+}
+
+.expanded-badge-section{
+  display: none;
+}
+
+.badge-container{
+
+}
+.badge{
+  color: $nutral-color3;
+  float: left;
+  font: $body1;
+  padding: 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+  a{
+  color: $nutral-color3;
+  text-decoration: none; 
+    .badge-image{
+      display: block;
+      height: 87px;
+      position: relative;
+      width: 100px;
+    }
+    .grayed-out{
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+    .title{
+      color: $nutral-color4;
+      font-weight: bold;
+      text-align: left;
+    }
+    .date{
+    }
+  }
+  .description{
+    color: $nutral-color3;
+    text-align: left;
+    width: 100px;
+  }
+  .title{
+    color: $nutral-color4;
+    font-weight: bold;
+    text-align: left;
+  }
+  .date{
+  }
+  .description{
+    color: $nutral-color3;
+    text-align: left;
+    width: 100px;
+  }
+  .from{
+    color: $nutral-color3;
+    cursor: pointer;
+    display: block;
+    font: $body1;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    &:hover{
+      text-decoration: underline;
+    }
+    &:visited{
+      color: $nutral-color3;
+    }
+  }
+}
+
+.flexbox{
+  .badge-container{
+    justify-content: center;
+    -webkit-justify-content: center;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+  }
+  .badge{
+    float: none;
+    min-width: 100px;
+  }
+}
+
+
+/* desktop ================================================== */
+
+@media (min-width: $desktop-min) {
+
+
+  
+}
+
+
+/* tablet ================================================== */
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+  
+
+}
+
+/* phone ================================================== */
+
+@media (max-width: $phone-max) {
+
+  .badge-stats{
+    .badge-stat-container{
+      width: 60%
+    }
+    .optional{
+      display: none;
+    }
+    .badge-help-text{
+      width: 40%;
+    }
+  }
+
+}

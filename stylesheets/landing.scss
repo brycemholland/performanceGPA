@@ -1,0 +1,89 @@
+@import "master";
+$slider-width: 464px;
+
+
+
+/* beign ie8 style ========================================== */ 
+
+.landing-card{
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+  margin: 8px;
+}
+
+.landing-header{
+  background-color: $primary-color;
+  border-bottom: 1px $primary-color-dark solid;
+  display: block;
+  height: 200px;
+  position: relative;
+  top: 0;
+  @include transition(all, $fast, ease-in-out);
+  width: 100%;
+  z-index: 50;
+  .landing-logo{
+    background: url("/assets/s2plogo-header.png") center no-repeat;
+    height: 200px;
+    margin: auto;
+    width: 350px;
+  }
+}
+
+.landing-forgot{
+  color: #999;
+  font: $body1;
+  float: right;
+  margin: 24px auto;
+  text-align: right;
+}
+
+.landing-section{
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  padding: 16px;
+  position: relative;
+  width: 50%;
+  .landing-display{
+    color: $primary-color;
+    font: $display1;
+    font-size: 48px;
+  }
+  .landing-subhead{
+    color: $nutral-color3;
+    font: $subhead;
+    padding-bottom: 48px;
+  }
+  .landing-headline{
+    color: $nutral-color4;
+    font: $headline;
+  }
+  .landing-stat{
+    color: $primary-color;
+    font: $headline;
+    padding: 8px 0;
+    .landing-number{
+      font-weight: bold;
+      font-size: 48px
+    }
+  }
+}
+
+.landing-button-container{
+  display: block;
+  float: right;
+  position: relative;
+  a{
+    text-decoration: none;
+  }
+}
+
+/* phone ================================================== */
+
+@media (max-width: $phone-max) {
+
+  .landing-section{
+    width: 100%;
+  }
+
+}

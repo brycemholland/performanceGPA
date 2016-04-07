@@ -1,0 +1,72 @@
+@import "master";
+
+/* general ================================================== */
+
+.footer{
+  background-color: $nutral-color4;
+  box-sizing: border-box;
+  display: block;
+  height: 64px;
+  margin-top: 24px;
+  position: relative;
+  width: 100%;
+  .footer-link{
+    color: $nutral-color2;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font: $subhead;
+    height: 100%;
+    line-height: 64px;
+    padding: 0 16px;
+    position: relative;
+    text-decoration: none;
+    .footer-logo{
+      height: 37px;
+      padding: 12px;
+      width: 50px;
+    }
+  }
+}
+
+
+/* desktop ================================================== */
+
+@media (min-width: $desktop-min) {
+
+  
+
+}
+
+
+/* tablet ================================================== */
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+  .footer{
+    .footer-logo{
+      margin-left: 16px;
+    }
+  }
+
+}
+
+/* phone ================================================== */
+
+@media (max-width: $phone-max) {
+
+  .footer{
+    height: auto;
+    margin-top: 16px;
+    min-height: 56px;
+    padding: 8px;
+    .footer-link{
+      float: none;
+      text-align: center;
+      .footer-logo{
+        margin-left: 0;
+      }
+    }
+  }
+
+}

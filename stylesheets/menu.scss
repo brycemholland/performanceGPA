@@ -1,0 +1,149 @@
+@import "master";
+
+/* general ================================================== */
+
+/* styling for .shadow and .shadow-active is in navbar.scss */
+
+.menu{
+  background-color: $nutral-color4;
+  box-shadow: 0 2px 2px $nutral-color3;
+  color: $nutral-color2;
+  display: block;
+  font: $subhead;
+  //height: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  @include transition(all, $medium, ease-in-out);
+  z-index: 30;
+  .menu-logo{
+    display: block;
+    height: 74px;
+    margin: 0 auto;
+    padding: 16px;
+    position: relative;
+    width: 100px;
+  }
+  .menu-item, a{
+    box-sizing: border-box;
+    text-decoration: none;
+    @include transition(all, $fast, ease-in-out);
+    &:hover{
+      background-color: $nutral-color3;
+      color: $nutral-color1;
+      text-decoration: none;
+    }
+    .icon-dashboard{
+      background: url("/assets/icon-dashboard.png") center no-repeat;
+    }
+    .icon-questions{
+      background: url("/assets/icon-questions.png") center no-repeat;
+    }
+    .icon-insights{
+      background: url("/assets/icon-insights.png") center no-repeat;
+    }
+    .icon-topics{
+      background: url("/assets/icon-topics.png") center no-repeat;
+    }
+    .icon-externships{
+      background: url("/assets/icon-externships.png") center no-repeat;
+    }
+    .icon-mentorships{
+      background: url("/assets/icon-mentorships.png") center no-repeat;
+    }
+    .icon-resources{
+      background: url("/assets/icon-resources.png") center no-repeat;
+    }
+    .menu-icon{
+      background-size: contain;
+      display: inline-block;
+      height: 24px;
+      margin-right: 16px;
+      position: relative;
+      width: 24px;
+    }
+    .menu-text, a{
+      color: $nutral-color2;
+      display: inline-block;
+      padding: 0;
+      text-decoration: none;
+    }
+  }
+}
+
+/* desktop ================================================== */
+
+@media screen and (min-width: $desktop-min) {
+
+  .menu{
+    @include transform(translate(-100%, 0));
+    width: 300px;
+    .menu-logo{
+      display: none;
+    }
+    .menu-item{
+      height: 64px;
+      line-height: 32px;
+      padding: 16px;
+    }
+  }
+  .menu-open{
+    @include transform(translate(0%, 0%));
+  }
+
+}
+
+/* tablet ================================================== */
+
+@media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+  .menu{
+    @include transform(translate(-100%, 0));
+    width: 300px;
+    .menu-item{
+      height: 64px;
+      line-height: 32px;
+      padding: 16px;
+    }
+  }
+  .menu-open{
+    @include transform(translate(0%, 0));
+  }
+
+  .index{
+    .menu{
+      .menu-logo{
+        display: none;
+      }
+    }
+  }
+  
+}
+
+
+/* phone ================================================== */
+
+@media screen and (max-width: $phone-max) {
+
+  .menu{
+    @include transform(translate(-100%, 0));
+    width: 100%;
+    .menu-item{
+      height: 56px;
+      line-height: 28px;
+      padding: 12px;
+    }
+  }
+  .menu-open{
+    @include transform(translate(0%, 0));
+  }
+
+  .index{
+    .menu{
+      .menu-logo{
+        display: none;
+      }
+    }
+  }
+
+}

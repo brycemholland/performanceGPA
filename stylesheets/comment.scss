@@ -1,0 +1,68 @@
+@import "master";
+
+
+/* general ================================================== */
+
+.comment-container{
+  display: block;
+  padding: 0;
+  position: relative;
+}
+
+.comment{
+  display: block;
+  min-height: 42px;
+  padding: 8px 0;
+  position: relative;
+  .text-container{
+    display: block;
+    padding: 0 16px 0 74px;
+    position: relative;
+    .name{
+      color: $primary-color;
+      font: $caption;
+    }
+    .text{
+      color: $nutral-color4;
+      display: block;
+      font: $body1;
+      padding: 4px 0;
+    }
+    .time{
+      color: $nutral-color3;
+      font: $caption;
+    }
+  }
+}
+
+/*
+.flexbox{
+  
+}
+*/
+
+
+/* desktop ================================================== */
+
+@media (min-width: $desktop-min) {
+
+  
+
+}
+
+
+/* tablet ================================================== */
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+  
+
+}
+
+/* phone ================================================== */
+
+@media (max-width: $phone-max) {
+
+  
+
+}

@@ -1,0 +1,44 @@
+@import "master";
+
+/* general ================================================== */
+
+.board-header{
+  border-bottom: 1px $nutral-color2 solid;
+  color: $primary-color;
+  font: $headline;
+  line-height: 23px;
+  padding: 16px;
+}
+
+.section-header{
+  color: $primary-color;
+  font: $subhead;
+  padding: 16px;
+  width: 100%;
+}
+
+
+/* desktop ================================================== */
+
+@media (min-width: $desktop-min) {
+
+  
+
+}
+
+
+/* tablet ================================================== */
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+  
+
+}
+
+/* phone ================================================== */
+
+@media (max-width: $phone-max) {
+
+  
+
+}

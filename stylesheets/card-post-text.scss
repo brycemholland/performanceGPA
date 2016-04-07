@@ -1,0 +1,102 @@
+@import "master";
+
+/* general ================================================== */
+
+.card-area{
+  padding-bottom: 16px;
+  margin: 0 auto;
+  width: 100%;
+  .card{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 4px;
+  }
+}
+
+.card-post-text{
+  background-color: $nutral-color1;
+  box-shadow: 0 2px 2px $nutral-color3;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  @include transition(all, $fast, ease-in-out);
+  width: 100%;
+  &:hover{
+    box-shadow: 0 6px 6px $nutral-color3;
+    top: -4px;
+  }
+  a{
+    text-decoration: none;
+    .title{
+      color: $primary-color;
+      font: $headline;
+      padding: 16px;
+    }
+    .text{
+      color: $nutral-color4;
+      font: $body1;
+      max-height: 410px;
+      overflow: hidden;
+      padding: 0 16px;
+      text-align: left;
+    }
+    .stats{
+      font: $caption;
+      padding: 16px;
+      .primary{
+        color: $primary-color;
+      }
+      .nutral{
+        color: $nutral-color3;
+      }
+    }
+    .divider{
+      background-color: $nutral-color2;
+      height: 1px;
+    }
+  }
+}
+
+
+
+/* 4 column ================================================== */
+
+@media (min-width: $desktop-min) {
+
+
+
+}
+
+
+/* 3 column ================================================== */
+
+@media (min-width: 608px) and (max-width: $tablet-max) {
+
+  .card-area{
+    
+  }
+
+}
+
+
+/* 2 column ================================================== */
+
+@media (max-width: $tablet-max) and (min-width: 620px) {
+
+  .card-area{
+    width: 608px;
+  }
+
+}
+
+
+/* 1 column ================================================== */
+
+@media (max-width: 619px) {
+
+  .card-area{
+    width: 304px;
+  }
+
+}

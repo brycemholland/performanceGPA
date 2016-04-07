@@ -1,0 +1,46 @@
+@import "master";
+
+/* general ================================================== */
+
+.post, .sort{
+  background-color: $nutral-color1;
+  box-shadow: 0 2px 2px $nutral-color3;
+  color: $nutral-color2;
+  display: block;
+  font: $subhead;
+  margin-top: -16px;
+  padding: 0;
+  position: absolute;
+  @include transform(translate(0, -110%));
+  @include transition(all, $medium, ease-in-out);
+  width: 100%;
+  z-index: 20;
+}
+.post-open, .sort-open{
+  @include transform(translate(0, 0%));
+}
+
+/* desktop ================================================== */
+
+@media (min-width: $desktop-min) {
+
+
+
+}
+
+/* tablet ================================================== */
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+  
+  
+}
+
+
+/* phone ================================================== */
+
+@media (max-width: $phone-max) {
+
+  
+
+}

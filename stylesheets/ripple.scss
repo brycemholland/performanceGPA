@@ -1,0 +1,50 @@
+@import "master";
+
+// This goes with ripple.js
+// The ripple effect is when you click a button or div and
+// a circle overlay ripples out from the click within the div
+
+/* general ================================================== */
+
+.ripple-button{
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.ripple-circle{
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  opacity: 0;
+  height: 0;
+  width: 0;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+}
+.ripple-button-dark{
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.ripple-circle-dark{
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  opacity: 0;
+  height: 0;
+  width: 0;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.2);
+}

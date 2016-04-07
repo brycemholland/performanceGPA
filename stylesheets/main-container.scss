@@ -1,0 +1,29 @@
+@import "master";
+
+
+/* general ================================================== */
+
+.main-container{
+  box-sizing: border-box;
+  display: block;
+  max-width: 944px;
+  min-height: 100vh;
+  margin: 8px auto;
+  position: relative;
+  .component-name{
+    clear: both;
+    color: $nutral-color4;
+    font: $display1;
+    padding: 24px 0 16px;
+  }
+}
+
+/* phone and tablet ================================================== */
+
+@media (max-width: $tablet-max) {
+
+  .main-container{
+    //margin: 8px; 
+  } 
+
+}

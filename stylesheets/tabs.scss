@@ -1,0 +1,84 @@
+@import "master";
+
+
+/* general ================================================== */
+
+.tabs-header{
+  border-bottom: 1px $nutral-color2 solid;
+  height: 56px;
+  .tab-container{
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 600px;
+    position: relative;
+    .tab{
+      color: $nutral-color4;
+      cursor: pointer;
+      display: block;
+      float: left;
+      font: $title;
+      height: 100%;
+      line-height: 56px;
+      min-width: 72px;
+      text-align: center;
+      @include transition(all, $fast, ease-in-out);
+      &:hover{
+        background-color: $nutral-color2;
+      }
+    }
+    .active-tab{
+      color: $primary-color;
+    }
+    .tab-indicator{
+      background-color: $primary-color;
+      bottom: 0;
+      left: 0;
+      right: 200px;
+      height: 2px;
+      position: absolute;
+    }
+  }
+}
+
+.tab-panel{
+  display: none;
+  position: relative;
+  visibility: visible;
+  width: 100%;
+  .test-content{
+    color: $nutral-color3;
+    font: $headline;
+    padding: 24px;
+    text-align: center;
+  }
+}
+.tab-panel[data-index="0"]{
+  display: block;
+}
+
+
+/* desktop ================================================== */
+
+@media (min-width: $desktop-min) {
+
+
+  
+}
+
+
+/* tablet ================================================== */
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+  
+
+}
+
+/* phone ================================================== */
+
+@media (max-width: $phone-max) {
+
+  
+
+}

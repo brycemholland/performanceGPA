@@ -1,0 +1,38 @@
+@import "master";
+
+
+/* general ================================================== */
+
+input[type=submit], .button{
+  -webkit-appearance: none;
+  background: none;
+  background-color: $primary-color;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px $nutral-color3;
+  color: $nutral-color1;
+  cursor: pointer;
+  display: block;
+  float: right;
+  font: $button;
+  height: 36px;
+  line-height: 36px;
+  margin: 16px;
+  max-width: 164px;
+  min-width: 64px;
+  outline: none;
+  padding: 0 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  top: 0;
+  @include transition(all, $fast, ease-in-out);
+  &:hover{
+    box-shadow: 0 4px 4px $nutral-color3;
+    top: -2px;
+  }
+  &:focus{
+    box-shadow: 0 4px 4px $nutral-color3;
+    top: -2px;
+  }
+}

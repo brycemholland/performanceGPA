@@ -1,0 +1,178 @@
+@import "master";
+
+/* general ================================================== */
+
+.navbar{
+  background-color: $primary-color;
+  box-shadow: 0 2px 2px $nutral-color3;
+  display: block;
+  position: relative;
+  @include transition(all, $fast, ease-in-out);
+  width: 100%;
+  z-index: 50;
+  .hamburger-button{
+    float: left;
+    .line-container{
+      height: 24px;
+      width: 24px;
+      .hamburger-line{
+        background-color: $nutral-color1;
+        height: 3px;
+        margin: 6px auto;
+        width: 24px;
+      }
+    }
+  }
+  .page-name{
+    color: $nutral-color1;
+    font: $headline;
+    float: left;
+  }
+  .post-button, .sort-button{
+    float: right;
+    width: 100px;
+  }
+  .nav-button{
+    color: $nutral-color1;
+    cursor: pointer;
+    font: $headline;
+    text-align: center;
+    @include transition(all, $fast, ease-in-out);
+    &:hover{
+      background-color: $primary-color-dark;
+    }
+  }
+  .nav-button-active{
+    background-color: $primary-color-dark;
+  }
+  .nav-icon-button{
+    color: $nutral-color1;
+    float: right;
+    &:hover{
+      background-color: $primary-color-dark;
+    }
+  }
+}
+.shadow{
+  background-color: $nutral-color4;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  @include transition(all, $medium, ease-in-out);
+  width: 100%;
+  z-index: 10;
+}
+.shadow-active{
+  opacity: 0.5;
+  visibility: visible;
+}
+
+.stop-scrolling {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* desktop ================================================== */
+
+@media (min-width: $desktop-min) {
+
+  .navbar{
+    height: 64px;
+    .hamburger-button{
+      height: 64px;
+      width: 64px;
+      .line-container{
+        margin: 20px auto;
+      }
+    }
+    .page-name{
+      line-height: 64px;
+      padding-left: 16px;
+    }
+    .nav-button{
+      height: 64px;
+      line-height: 64px;
+    }
+    .nav-icon-button{
+      display: none;
+    }
+  }
+
+}
+
+/* tablet ================================================== */
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+  .navbar{
+    height: 64px;
+    .hamburger-button{
+      height: 64px;
+      margin-left: 0;
+      width: 64px;
+      .line-container{
+        margin: 20px auto;
+      }
+    }
+    .page-name{
+      line-height: 64px;
+      padding-left: 16px;
+    }
+    .nav-button{
+      height: 64px;
+      line-height: 64px;
+    }
+    .nav-icon-button{
+      display: none;
+    }
+  }
+
+}
+
+
+/* phone ================================================== */
+
+@media (max-width: $phone-max) {
+
+.navbar{
+    height: 56px;
+    .hamburger-button{
+      height: 56px;
+      margin-left: 0;
+      width: 56px;
+      .line-container{
+        margin: 16px auto;
+      }
+    }
+    .page-name{
+      font: $headline;
+      line-height: 52px;
+      padding-left: 8px;
+    }
+    .nav-button{
+      height: 56px;
+      line-height: 52px;
+    }
+    .nav-icon-button{
+      display: none;
+    }
+    /*
+    .nav-button.post-button, .nav-button.sort-button{
+      display: none;
+    }
+    .sort-button{
+      background: url("../img/icon-sort.png") center no-repeat;
+    }
+    .post-button{
+      background: url("../img/icon-post.png") center no-repeat;
+    }
+    .nav-icon-button{
+      background-size: 24px;
+      height: 56px;
+      width: 56px;
+    }
+    */
+  }
+
+}
