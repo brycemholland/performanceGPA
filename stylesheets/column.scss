@@ -13,7 +13,12 @@
     padding: 16px;
     position: relative;
   }
-  
+}
+
+.no-pad{
+  .column{
+    padding: 0;
+  }
 }
 
 
@@ -30,6 +35,9 @@
     }
     .column.col50{
       width: 50%;
+    }
+    .column.col66{
+      width: 66%;
     }
     .column.col75{
       width: 75%;
@@ -52,6 +60,9 @@
     .column.col50{
       width: 50%;
     }
+    .column.col66{
+      width: 66%;
+    }
     .column.col75{
       width: 100%;
     }
@@ -65,7 +76,7 @@
 @media screen and (max-width: $phone-max) {
 
   .column-container{
-    .column.col25, .column.col33, .column.col50, .column.col75{
+    .column.col25, .column.col33, .column.col50, .column.col66, .column.col75{
     width: 100%;
     }
   }

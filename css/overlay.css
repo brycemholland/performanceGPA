@@ -23,8 +23,21 @@ html, body {
 .icon {
   display: block;
   height: 100px;
+  margin: auto;
   position: relative;
   width: 100px; }
+
+.photo {
+  display: block;
+  position: relative;
+  width: 100%; }
+
+.whitespace {
+  display: block;
+  height: 8px;
+  margin: 40px 0;
+  position: relative;
+  width: 100%; }
 
 .clear {
   clear: both;
@@ -65,8 +78,6 @@ html, body {
       padding-left: 16px; }
       .overlay-container .text ul li {
         padding-bottom: 8px; }
-    .overlay-container .text .right {
-      text-align: right; }
     .overlay-container .text .big-number {
       font-size: 70px; }
 

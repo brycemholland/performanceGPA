@@ -97,8 +97,23 @@ html, body{
 .icon{
   display: block;
   height: 100px;
+  margin: auto;
   position: relative;
   width: 100px;
+}
+
+.photo{
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.whitespace{
+  display: block;
+  height: 8px;
+  margin: 40px 0;
+  position: relative;
+  width: 100%;
 }
 
 .clear{

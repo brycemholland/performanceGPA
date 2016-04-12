@@ -23,8 +23,21 @@ html, body {
 .icon {
   display: block;
   height: 100px;
+  margin: auto;
   position: relative;
   width: 100px; }
+
+.photo {
+  display: block;
+  position: relative;
+  width: 100%; }
+
+.whitespace {
+  display: block;
+  height: 8px;
+  margin: 40px 0;
+  position: relative;
+  width: 100%; }
 
 .clear {
   clear: both;
@@ -42,6 +55,9 @@ html, body {
     padding: 16px;
     position: relative; }
 
+.no-pad .column {
+  padding: 0; }
+
 /* desktop ================================================== */
 @media screen and (min-width: 960px) {
   .column-container .column.col25 {
@@ -50,6 +66,8 @@ html, body {
     width: 33%; }
   .column-container .column.col50 {
     width: 50%; }
+  .column-container .column.col66 {
+    width: 66%; }
   .column-container .column.col75 {
     width: 75%; } }
 /* tablet ================================================== */
@@ -60,9 +78,11 @@ html, body {
     width: 33%; }
   .column-container .column.col50 {
     width: 50%; }
+  .column-container .column.col66 {
+    width: 66%; }
   .column-container .column.col75 {
     width: 100%; } }
 /* phone ================================================== */
 @media screen and (max-width: 599px) {
-  .column-container .column.col25, .column-container .column.col33, .column-container .column.col50, .column-container .column.col75 {
+  .column-container .column.col25, .column-container .column.col33, .column-container .column.col50, .column-container .column.col66, .column-container .column.col75 {
     width: 100%; } }

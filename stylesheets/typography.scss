@@ -3,6 +3,7 @@
 /* general ================================================== */
 
 .headline{
+  color: $primary-color;
   font: $headline;
 }
 
@@ -20,6 +21,13 @@
 
 .body{
   font: $body;
+  ul{
+    margin: 0;
+    padding: 0 16px;
+    li{
+      padding-bottom: 16px;
+    }
+  }
 }
 
 .caption{
@@ -27,7 +35,7 @@
 }
 
 .board-header{
-  border-bottom: 1px $nutral-color2 solid;
+  //border-bottom: 1px $nutral-color2 solid;
   color: $primary-color;
   font: $headline;
   line-height: 32px;
@@ -39,6 +47,26 @@
   font: $subhead;
   padding: 16px;
   width: 100%;
+}
+
+.gray{
+  color: $nutral-color3;
+}
+
+.color{
+  color: $primary-color;
+}
+
+.right{
+  text-align: right;
+}
+
+.center{
+  text-align: center;
+}
+
+.justify{
+  text-align: justify;
 }
 
 

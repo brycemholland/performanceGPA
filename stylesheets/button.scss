@@ -10,14 +10,15 @@ input[type=submit], .button{
   border: none;
   border-radius: 2px;
   box-shadow: 0 2px 2px $nutral-color3;
+  box-sizing: border-box;
   color: $nutral-color1;
   cursor: pointer;
   display: block;
-  float: right;
+  float: none;
   font: $button;
   height: 36px;
   line-height: 36px;
-  margin: 16px;
+  margin: 16px auto;
   max-width: 164px;
   min-width: 64px;
   outline: none;
