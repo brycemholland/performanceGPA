@@ -5,9 +5,11 @@
 .board{
   background-color: $nutral-color1;
   box-shadow: 0 2px 2px $nutral-color3;
+  box-sizing: border-box;
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   min-height: 48px;
+  padding-bottom: 32px;
   position: relative;
   @include transition(all, $medium, ease-in-out);
   width: 100%;

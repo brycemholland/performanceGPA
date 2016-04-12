@@ -3,8 +3,10 @@
 /* general ================================================== */
 
 .overlay-container{
+  box-shadow: 0 2px 2px $nutral-color3;
   height: 300px;
   margin: 0;
+  margin-bottom: 16px;
   overflow: hidden;
   padding: 0;
   position: relative;

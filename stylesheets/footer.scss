@@ -11,6 +11,7 @@
   position: relative;
   width: 100%;
   .footer-link{
+    background-color: $nutral-color4;
     color: $nutral-color2;
     cursor: pointer;
     display: block;
@@ -21,6 +22,9 @@
     padding: 0 16px;
     position: relative;
     text-decoration: none;
+    &:hover{
+      background-color: $nutral-color3;
+    }
     .footer-logo{
       height: 37px;
       padding: 12px;
@@ -44,8 +48,16 @@
 @media (min-width: $tablet-min) and (max-width: $tablet-max) {
 
   .footer{
-    .footer-logo{
-      margin-left: 16px;
+    height: auto;
+    margin-top: 16px;
+    min-height: 56px;
+    padding: 8px;
+    .footer-link{
+      float: none;
+      text-align: center;
+      .footer-logo{
+        margin-left: 0;
+      }
     }
   }
 

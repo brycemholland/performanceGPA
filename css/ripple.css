@@ -20,6 +20,12 @@ html, body {
   margin: 8px auto;
   position: relative; }
 
+.icon {
+  display: block;
+  height: 100px;
+  position: relative;
+  width: 100px; }
+
 .clear {
   clear: both;
   width: 100%; }
