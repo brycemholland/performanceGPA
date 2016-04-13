@@ -94,7 +94,9 @@
 
 @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
 
-
+  .right{
+    text-align: left;  
+  }
   
 }
 
@@ -103,6 +105,8 @@
 
 @media screen and (max-width: $phone-max) {
 
-  
+  .right{
+    text-align: left;  
+  }
 
 }

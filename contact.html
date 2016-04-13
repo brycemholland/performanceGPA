@@ -10,6 +10,8 @@
   <link rel="stylesheet" type="text/css" href="css/button.css">
   <link rel="stylesheet" type="text/css" href="css/column.css">
   <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/input-text.css">
+  <link rel="stylesheet" type="text/css" href="css/input-text-field.css">
   <link rel="stylesheet" type="text/css" href="css/menu.css">
   <link rel="stylesheet" type="text/css" href="css/navbar.css">
   <link rel="stylesheet" type="text/css" href="css/overlay.css">
@@ -17,6 +19,10 @@
   <link rel="stylesheet" type="text/css" href="css/typography.css">
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="javascripts/jquery.autosize.min.js"></script>
+  <script src="javascripts/form-validation.js"></script>
+  <script src="javascripts/input-text.js"></script>
+  <script src="javascripts/input-text-field.js"></script>
   <script src="javascripts/navbar.js"></script>
   <script src="javascripts/ripple.js"></script>
   <script src="javascripts/footer.js"></script>
@@ -88,7 +94,7 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12891.51363882065!2d-94.1359448!3d36.1208199!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd5fb52dc700542b1!2sGrandslam+Performance+Associates%2C+LLC!5e0!3m2!1sen!2sus!4v1438189246065" width="944" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
     -->
-    <div class="address">
+    <div class="title">
       Grandslam Performance Associates, LLC<br>
       1672 E. Joyce Blvd<br>
       Fayetteville, AR 72703<br>
@@ -121,7 +127,7 @@
       </div>
       <div class="clear"></div>
 
-      <input name="Submit" type="submit" value="Submit" class="button ripple-button-dark"/>
+      <input name="Submit" type="submit" value="SUBMIT" class="button ripple-button-dark"/>
       <div class="clear"></div>
 
     </form>
@@ -185,21 +191,21 @@
       
       var fname=document.contact_form.fname
       if ((fname.value==null)||(fname.value=="")){
-            alert("Fields marqued with * must be entered")
+            alert("All fields must be used")
             fname.focus()
             return false
             }
       
       var subject=document.contact_form.subject 
       if ((subject.value==null)||(subject.value=="")){
-            alert("Fields marqued with * must be entered")
+            alert("All fields must be used")
             subject.focus()
             return false
             }
      
       var message=document.contact_form.message 
       if ((message.value==null)||(message.value=="")){
-            alert("Fields marqued with * must be entered")
+            alert("All fields must be used")
             message.focus()
             return false
             }

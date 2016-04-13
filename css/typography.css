@@ -12,6 +12,14 @@ html, body {
   position: relative;
   width: 100%; }
 
+.map {
+  background: url("../images/map.png") no-repeat center;
+  background-size: 1100px auto;
+  display: block;
+  height: 400px;
+  position: relative;
+  width: 100%; }
+
 .s2p-header {
   background-color: #009933;
   box-shadow: 0; }
@@ -111,4 +119,10 @@ html, body {
 
 /* desktop ================================================== */
 /* tablet ================================================== */
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  .right {
+    text-align: left; } }
 /* phone ================================================== */
+@media screen and (max-width: 599px) {
+  .right {
+    text-align: left; } }

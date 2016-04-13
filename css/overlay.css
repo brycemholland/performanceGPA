@@ -12,6 +12,14 @@ html, body {
   position: relative;
   width: 100%; }
 
+.map {
+  background: url("../images/map.png") no-repeat center;
+  background-size: 1100px auto;
+  display: block;
+  height: 400px;
+  position: relative;
+  width: 100%; }
+
 .s2p-header {
   background-color: #009933;
   box-shadow: 0; }
@@ -94,7 +102,7 @@ html, body {
       font-size: 70px; }
 
 .no-shadow {
-  box-shadow: 0; }
+  box-shadow: 0 0 0 transparent; }
 
 /* desktop ================================================== */
 /* tablet ================================================== */
