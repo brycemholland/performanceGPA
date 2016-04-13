@@ -53,8 +53,16 @@
   color: $nutral-color3;
 }
 
+.white{
+  color: $nutral-color1;
+}
+
 .color{
   color: $primary-color;
+}
+
+.color2{
+  color: $secondary-color;
 }
 
 .right{
@@ -67,6 +75,10 @@
 
 .justify{
   text-align: justify;
+}
+
+.no-pad{
+  padding-left: 0;
 }
 
 

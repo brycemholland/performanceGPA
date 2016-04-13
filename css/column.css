@@ -12,6 +12,10 @@ html, body {
   position: relative;
   width: 100%; }
 
+.s2p-header {
+  background-color: #009933;
+  box-shadow: 0; }
+
 .main-container {
   box-sizing: border-box;
   display: block;

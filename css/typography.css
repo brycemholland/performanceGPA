@@ -12,6 +12,10 @@ html, body {
   position: relative;
   width: 100%; }
 
+.s2p-header {
+  background-color: #009933;
+  box-shadow: 0; }
+
 .main-container {
   box-sizing: border-box;
   display: block;
@@ -84,8 +88,14 @@ html, body {
 .gray {
   color: #9e9e9e; }
 
+.white {
+  color: white; }
+
 .color {
   color: #12679a; }
+
+.color2 {
+  color: #009933; }
 
 .right {
   text-align: right; }
@@ -95,6 +105,9 @@ html, body {
 
 .justify {
   text-align: justify; }
+
+.no-pad {
+  padding-left: 0; }
 
 /* desktop ================================================== */
 /* tablet ================================================== */

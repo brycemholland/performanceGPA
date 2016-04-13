@@ -10,8 +10,8 @@ $desktop-min: 960px;
 
 $primary-color: #12679A;
 $primary-color-dark: #0D4C63;
-$secondary-color: #EF6C00;
-$secondary-color-dark: #E65100;
+$secondary-color: #009933;
+$secondary-color-dark: #1B5E20;
 $nutral-color1: #ffffff;
 $nutral-color2: #e0e0e0;
 $nutral-color3: #9e9e9e;
@@ -83,6 +83,11 @@ html, body{
   padding: 0;
   position: relative;
   width: 100%;
+}
+
+.s2p-header{
+  background-color: $secondary-color;
+  box-shadow: 0;
 }
 
 .main-container{

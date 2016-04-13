@@ -30,10 +30,20 @@
     background-color: $primary-color;
     opacity: 0.6;
   }
+  .color2{
+    background-color: $secondary-color;
+    opacity: 0.6;
+  }
   .text{
     color: $nutral-color1;
     font: $headline;
     font-weight: bold;
+    img{
+      display: block;
+      margin: 48px auto 0;
+      position: relative;
+      width: 50%;
+    }
     ul{
       font: $body;
       padding-left: 16px;
@@ -45,6 +55,9 @@
       font-size: 70px;
     }
   }
+}
+.no-shadow{
+  box-shadow: 0;
 }
 
 /* desktop ================================================== */

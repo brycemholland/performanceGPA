@@ -12,6 +12,10 @@ html, body {
   position: relative;
   width: 100%; }
 
+.s2p-header {
+  background-color: #009933;
+  box-shadow: 0; }
+
 .main-container {
   box-sizing: border-box;
   display: block;
@@ -69,10 +73,18 @@ html, body {
   .overlay-container .color {
     background-color: #12679a;
     opacity: 0.6; }
+  .overlay-container .color2 {
+    background-color: #009933;
+    opacity: 0.6; }
   .overlay-container .text {
     color: white;
     font: 300 32px "Roboto", sans-serif;
     font-weight: bold; }
+    .overlay-container .text img {
+      display: block;
+      margin: 48px auto 0;
+      position: relative;
+      width: 50%; }
     .overlay-container .text ul {
       font: 400 14px "Roboto", sans-serif;
       padding-left: 16px; }
@@ -80,6 +92,9 @@ html, body {
         padding-bottom: 8px; }
     .overlay-container .text .big-number {
       font-size: 70px; }
+
+.no-shadow {
+  box-shadow: 0; }
 
 /* desktop ================================================== */
 /* tablet ================================================== */
