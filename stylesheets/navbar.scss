@@ -25,6 +25,7 @@
   }
   .page-name{
     color: $nutral-color1;
+    display: block;
     font: $headline;
     float: left;
   }
@@ -162,6 +163,7 @@
       }
     }
     .page-name{
+      display: none;
       font: $headline;
       line-height: 52px;
       padding-left: 8px;

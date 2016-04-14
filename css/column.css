@@ -85,7 +85,7 @@ html, body {
 /* tablet ================================================== */
 @media screen and (min-width: 600px) and (max-width: 959px) {
   .column-container .column.col25 {
-    width: 50%; }
+    width: 33%; }
   .column-container .column.col33 {
     width: 33%; }
   .column-container .column.col50 {
@@ -93,7 +93,7 @@ html, body {
   .column-container .column.col66 {
     width: 66%; }
   .column-container .column.col75 {
-    width: 100%; } }
+    width: 66%; } }
 /* phone ================================================== */
 @media screen and (max-width: 599px) {
   .column-container .column.col25, .column-container .column.col33, .column-container .column.col50, .column-container .column.col66, .column-container .column.col75 {

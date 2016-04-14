@@ -100,3 +100,12 @@ input[type=submit], .button {
     box-shadow: 0 4px 4px #0d4c63; }
   .button.white:focus {
     box-shadow: 0 4px 4px #0d4c63; }
+
+.button.white.color2-text {
+  background-color: white;
+  box-shadow: 0 2px 2px #0d4c63;
+  color: #009933; }
+  .button.white.color2-text:hover {
+    box-shadow: 0 4px 4px #0d4c63; }
+  .button.white.color2-text:focus {
+    box-shadow: 0 4px 4px #0d4c63; }

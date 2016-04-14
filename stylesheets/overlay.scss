@@ -41,6 +41,7 @@
     img{
       display: block;
       margin: 48px auto 0;
+      min-height: auto;
       position: relative;
       width: 50%;
     }
@@ -72,7 +73,35 @@
 
 @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
 
+  .overlay-container{
+    img{
+      min-height: 100%;
+      width: auto;
+    }
+    .text{
+      img{
+        width: 55%;
+      }
+    }
+  }
 
+  .overlay-container.grow{
+    img{
+      min-height: 100%;
+      width: auto;
+    }
+    .text{
+      box-sizing: border-box;
+      font: $title;
+      padding: 16px;
+      .column{
+        padding: 0;
+      }
+      .big-number{
+        font-size: 50px;
+      }
+    }
+  }
   
 }
 
@@ -81,6 +110,39 @@
 
 @media screen and (max-width: $phone-max) {
 
-  
+  .overlay-container{
+    img{
+      min-height: 100%;
+      width: auto;
+    }
+    .text{
+      img{
+        width: 60%;
+      }
+    }
+  }
+
+  .overlay-container.grow{
+    height: 400px;
+    img{
+      min-height: 100%;
+      width: auto;
+    }
+    .overlay{
+      height: 350px;
+    }
+    .text{
+      box-sizing: border-box;
+      font: $title;
+      padding: 8px;
+      .column{
+        padding: 0;
+        text-align: center;
+      }
+      .big-number{
+        font-size: 50px;
+      }
+    }
+  }
 
 }

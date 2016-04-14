@@ -91,6 +91,7 @@ html, body {
     .overlay-container .text img {
       display: block;
       margin: 48px auto 0;
+      min-height: auto;
       position: relative;
       width: 50%; }
     .overlay-container .text ul {
@@ -106,4 +107,45 @@ html, body {
 
 /* desktop ================================================== */
 /* tablet ================================================== */
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  .overlay-container img {
+    min-height: 100%;
+    width: auto; }
+  .overlay-container .text img {
+    width: 55%; }
+
+  .overlay-container.grow img {
+    min-height: 100%;
+    width: auto; }
+  .overlay-container.grow .text {
+    box-sizing: border-box;
+    font: 500 20px "Roboto", sans-serif;
+    padding: 16px; }
+    .overlay-container.grow .text .column {
+      padding: 0; }
+    .overlay-container.grow .text .big-number {
+      font-size: 50px; } }
 /* phone ================================================== */
+@media screen and (max-width: 599px) {
+  .overlay-container img {
+    min-height: 100%;
+    width: auto; }
+  .overlay-container .text img {
+    width: 60%; }
+
+  .overlay-container.grow {
+    height: 400px; }
+    .overlay-container.grow img {
+      min-height: 100%;
+      width: auto; }
+    .overlay-container.grow .overlay {
+      height: 350px; }
+    .overlay-container.grow .text {
+      box-sizing: border-box;
+      font: 500 20px "Roboto", sans-serif;
+      padding: 8px; }
+      .overlay-container.grow .text .column {
+        padding: 0;
+        text-align: center; }
+      .overlay-container.grow .text .big-number {
+        font-size: 50px; } }

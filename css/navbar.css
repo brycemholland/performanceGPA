@@ -80,6 +80,7 @@ html, body {
         width: 24px; }
   .navbar .page-name {
     color: white;
+    display: block;
     font: 300 32px "Roboto", sans-serif;
     float: left; }
   .navbar .post-button, .navbar .sort-button {
@@ -186,6 +187,7 @@ html, body {
       .navbar .hamburger-button .line-container {
         margin: 16px auto; }
     .navbar .page-name {
+      display: none;
       font: 300 32px "Roboto", sans-serif;
       line-height: 52px;
       padding-left: 8px; }
